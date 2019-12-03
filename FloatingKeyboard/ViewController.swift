@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissKeyboard))
         keyboardToolbar.items = [flexBarButton, doneBarButton]
-       // textField.inputAccessoryView = keyboardToolbar
-       // secondTextField.inputAccessoryView = keyboardToolbar
+        textField.inputAccessoryView = keyboardToolbar
+        secondTextField.inputAccessoryView = keyboardToolbar
     }
     
     @objc func keyboardWillShow(notification: Notification) {
