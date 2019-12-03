@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottonConstraint: NSLayoutConstraint!
     var initialConstant: CGFloat!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var secondTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,8 +26,8 @@ class ViewController: UIViewController {
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissKeyboard))
         keyboardToolbar.items = [flexBarButton, doneBarButton]
-        textField.inputAccessoryView = keyboardToolbar
-        
+       // textField.inputAccessoryView = keyboardToolbar
+       // secondTextField.inputAccessoryView = keyboardToolbar
     }
     
     @objc func keyboardWillShow(notification: Notification) {
